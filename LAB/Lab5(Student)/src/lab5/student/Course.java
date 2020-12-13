@@ -2,7 +2,7 @@
 package lab5.student;
 
 import java.util.ArrayList;
-//import java.util.*;
+
 
 public class Course {
     
@@ -23,9 +23,7 @@ public Course( String title, int id, double credit){
  this.CourseCredit = credit; 
            
 }
-//public void setCourseId(String id){
-  // this.CourseId = id;
-//}
+
 public int getCourseId(){
     return CourseId;
 }
@@ -51,20 +49,20 @@ public double getCourseCredit(){
         return StuList.get(i).getStudentId();
     }
     
-  // Add Student
+
     public void addStudent(Student s){
         StuList.add(s);
         System.out.println(StuList);
-        //pass t1522
+       
     }
- // Add Faculty
+ 
     public void addFaculty(Faculty faculty){
         this.faculty = faculty;
        
         System.out.println(this.faculty);
     }
    
-    // Drop
+
     public void dropStudent(int studentId){
         for( int i = 0 ; i < StuList.size() ; i++ ){         
             if( studentId == StuList.get(i).getStudentId() ){
@@ -73,7 +71,7 @@ public double getCourseCredit(){
         }
     }
    
-    // Drop Faculty
+
     public void dropFaculty(){
         this.faculty = null;
     }  
